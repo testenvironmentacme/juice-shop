@@ -1,11 +1,12 @@
-name: Snyk Executable Full plat
+name: Snyk Code Test
 
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+  workflow_dispatch:
+    
 jobs:
   build:
     name: Test and build
